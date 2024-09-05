@@ -75,6 +75,7 @@ nav a:hover {
 article {
   flex-basis: 50%;
 }
+/* About figure styling */
 figure {
   margin: 3rem 0 0 0;
   flex-basis: 40%;
@@ -89,6 +90,7 @@ figcaption {
   color: #f2f2f2;
   padding: 0.5rem;
 }
+/* Button styling */
 .button {
   display: inline-block;
   background-color: #59331D;
@@ -103,6 +105,7 @@ figcaption {
   background-color: #f2f2f2;
   color: #59331d;
 }
+/* Footer styling */
 footer {
   color: #f2f2f2;
   text-align: center;
@@ -122,7 +125,7 @@ footer a {
   display: block;
   margin: 0 1rem 3rem 1rem;
 }
-
+/* Product img border */
 .productCol img {
     border-radius: 10px;
     max-width: 400px;
@@ -131,6 +134,7 @@ footer a {
 h2 {
     font-size: 2rem;
 }
+
 .productCol .title {
     font-size: 1.25rem;
 }
@@ -140,8 +144,9 @@ h2 {
 .contact img {
     border-radius: 10px;
 }
-
+/* Desktop Query */
 @media screen and (min-width: 1280px) {
+  /* Navbar alignment for desktop width */
     nav ul {
         justify-content: right;
         align-items: end;
@@ -155,12 +160,14 @@ h2 {
     nav {
         margin-top: 15px;
     }
+    /* Image swapping on about page */
     .img2 {
         display: none;
     }
     .img1 {
         display:block;
     }
+    /* Change menu layout */
     .productCol {
         display: flex;
         flex-direction: row;
@@ -179,6 +186,7 @@ h2 {
     
 
 }
+/* Tablet Query */
 @media screen and (max-width: 1279px) and (min-width:768px) {
     .img1 {
         display: none;
@@ -191,8 +199,8 @@ h2 {
     .main {
         justify-content: space-around;
         max-width: 755px;
-        
     }
+    /* Change menu layout */
     .productCol {
         display: flex;
         flex-direction: row;
@@ -217,7 +225,9 @@ h2 {
     }
 
 }
+/* Mobile Query */
 @media screen and (max-width: 767px) {
+    /* Image swapping */
     .img1 {
         display: inline;
     }
